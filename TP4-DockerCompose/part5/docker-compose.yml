@@ -1,0 +1,11 @@
+version: "3"
+services:
+  myservice:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    networks:
+      - net1
+networks:
+  net1:
+    driver: bridge

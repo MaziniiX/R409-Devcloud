@@ -1,0 +1,8 @@
+version: "3"
+services:
+  myservice:
+    image: debian:latest
+    environment:
+      - VAR1="myvar1"
+      - VAR2="myvar2"
+    command: ["/bin/bash", "-c", "echo $$VAR1 $$VAR2"]
